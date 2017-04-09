@@ -1,6 +1,6 @@
 package com.gzhou.menxian.home;
 
-import com.gzhou.menxian.models.CityListData;
+import com.gzhou.menxian.models.RestaurantListData;
 
 import java.util.List;
 
@@ -14,6 +14,6 @@ public interface HomeView {
 
     void onFailure(String appErrorMessage);
 
-    void getityListSuccess(List<CityListData> cityListResponse);
+    void getityListSuccess(List<RestaurantListData> restaurantListResponse);
 
 }

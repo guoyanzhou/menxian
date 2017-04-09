@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.gzhou.menxian.R;
+import com.gzhou.menxian.activity.AbstractFragmentActivity;
 import com.gzhou.menxian.activity.FavoritesActivity;
-import com.gzhou.menxian.home.HomeActivity;
 import com.gzhou.menxian.util.Utils;
 
 import butterknife.ButterKnife;
@@ -27,7 +27,7 @@ public class MainFragment extends Fragment {
         viewholder.discover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Utils.launchActivity(getContext(), HomeActivity.class, null);
+                Utils.launchActivity(getContext(), AbstractFragmentActivity.RestaurantListActivity.class, null);
             }
         });
         viewholder.favorites.setOnClickListener(new View.OnClickListener() {

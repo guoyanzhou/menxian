@@ -1,13 +1,11 @@
 package com.gzhou.menxian.networking;
 
 
-import com.gzhou.menxian.models.CityListData;
-import com.gzhou.menxian.models.RestaurantData;
+import com.gzhou.menxian.models.RestaurantListData;
 
 import java.util.List;
 
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 import rx.Observable;
 
 /**
@@ -16,5 +14,5 @@ import rx.Observable;
 public interface NetworkService {
 
     @GET("v2/restaurant/?lat=37.422740&lng=-122.139956")
-    Observable<List<CityListData>> getCityList();
+    Observable<List<RestaurantListData>> getCityList();
 }

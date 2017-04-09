@@ -1,7 +1,7 @@
 package com.gzhou.menxian.networking;
 
 
-import com.gzhou.menxian.models.CityListData;
+import com.gzhou.menxian.models.RestaurantListData;
 
 import java.util.List;
 
@@ -24,13 +24,13 @@ public class Service {
         return networkService.getCityList()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .onErrorResumeNext(new Func1<Throwable, Observable<? extends List<CityListData>>>() {
+                .onErrorResumeNext(new Func1<Throwable, Observable<? extends List<RestaurantListData>>>() {
                     @Override
-                    public Observable<? extends List<CityListData>> call(Throwable throwable) {
+                    public Observable<? extends List<RestaurantListData>> call(Throwable throwable) {
                         return Observable.error(throwable);
                     }
                 })
-                .subscribe(new Subscriber<List<CityListData>>() {
+                .subscribe(new Subscriber<List<RestaurantListData>>() {
                     @Override
                     public void onCompleted() {
 
@@ -43,15 +43,15 @@ public class Service {
                     }
 
                     @Override
-                    public void onNext(List<CityListData> cityListResponse) {
-                        callback.onSuccess(cityListResponse);
+                    public void onNext(List<RestaurantListData> restaurantListResponse) {
+                        callback.onSuccess(restaurantListResponse);
 
                     }
                 });
     }
 
     public interface GetCityListCallback{
-        void onSuccess(List<CityListData> cityListResponse);
+        void onSuccess(List<RestaurantListData> restaurantListResponse);
 
         void onError(NetworkError networkError);
     }

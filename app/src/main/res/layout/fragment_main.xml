@@ -6,11 +6,6 @@
     android:orientation="vertical"
     tools:context="com.gzhou.menxian.fragment.MainFragment">
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toolbar" />
-
     <LinearLayout
         android:id="@+id/fragment_main_discover"
         android:layout_width="match_parent"
