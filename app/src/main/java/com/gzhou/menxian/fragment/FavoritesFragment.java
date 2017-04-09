@@ -189,6 +189,7 @@ public class FavoritesFragment extends Fragment {
             if (mIdList != null) {
                 return mIdList.size();
             }
+            viewHolder.progressBar.setVisibility(View.GONE);
             return 0;
         }
     }
