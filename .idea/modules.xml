@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidCleanCode.iml" filepath="$PROJECT_DIR$/AndroidCleanCode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DoorDash_phonescreen.iml" filepath="$PROJECT_DIR$/DoorDash_phonescreen.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menxian.iml" filepath="$PROJECT_DIR$/menxian.iml" />
     </modules>
   </component>
 </project>

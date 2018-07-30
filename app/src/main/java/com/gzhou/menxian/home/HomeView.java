@@ -4,9 +4,6 @@ import com.gzhou.menxian.models.RestaurantListData;
 
 import java.util.List;
 
-/**
- * Created by ennur on 6/25/16.
- */
 public interface HomeView {
     void showWait();
 

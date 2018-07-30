@@ -10,10 +10,6 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by aaron on 4/8/17.
- */
-
 public class SharedPrefsUtils {
     private static SharedPreferences sharedPreferences;
     private static Context _context;

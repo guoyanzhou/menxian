@@ -9,9 +9,6 @@ import com.gzhou.menxian.networking.NetworkModule;
 
 import java.io.File;
 
-/**
- * Created by ennur on 6/28/16.
- */
 public class BaseApp  extends AppCompatActivity{
     Deps deps;
 

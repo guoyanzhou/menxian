@@ -10,10 +10,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by aaron on 4/8/17.
- */
-
 public class MyDiskCache {
     private DiskLruCache cache = null;
     private static final int VER = 1;

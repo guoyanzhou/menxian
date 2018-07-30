@@ -1,9 +1,5 @@
 package com.gzhou.menxian.util;
 
-/**
- * Created by aaron on 4/8/17.
- */
-
 import android.content.Context;
 
 import com.gzhou.menxian.models.RestaurantData;
