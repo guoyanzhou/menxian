@@ -17,7 +17,12 @@ import java.util.List;
 
 public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAdapter.ViewHolder> {
     private final OnItemClickListener listener;
-    private List<RestaurantListData> data;
+
+    public List<RestaurantListData> getData() {
+        return data;
+    }
+
+    public List<RestaurantListData> data;
     private Context context;
 
     public RestaurantListAdapter(Context context, List<RestaurantListData> data, OnItemClickListener listener) {

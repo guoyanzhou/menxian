@@ -43,9 +43,6 @@ public class FavoritesFragment extends Fragment {
     FavoritesFragmentViewHolder viewHolder;
     private FavoritesAdapter mAdapter;
 
-    @Inject
-    public Service service;
-
     public static FavoritesFragment newInstance() {
         FavoritesFragment fragment = new FavoritesFragment();
         return fragment;
